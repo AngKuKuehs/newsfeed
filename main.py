@@ -20,8 +20,8 @@ import json
 
 #Loading the keys from environment.
 load_dotenv("./.env", verbose=True)
-BING_KEY = os.getenv('BING_KEY')
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+BING_KEY = os.environ.get('BING_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 #Creating an instance of FASTAPI().
 app = FastAPI()
